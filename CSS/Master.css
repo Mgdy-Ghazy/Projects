@@ -1,0 +1,171 @@
+:root{
+    --main-color: #ff9800;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Setings-box{
+    position: fixed;
+    left: -200px;
+    top: 0;
+    background-color: #fff;
+    width: 200px;
+    z-index: 1000;
+    min-height: 1000vh;
+    transition: .3s;
+}
+
+.Setings-box.open{
+    left: 0px;
+}
+
+.Setings-box .Togel-Setings{
+    position: absolute;
+    right: -30px;
+    top: 100px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+}
+
+.Setings-box .Togel-Setings .fa-gear{
+    width: 30px;
+    padding: 8px 0;
+}
+
+.Setings-box .Options-box{
+padding: 20px;
+}
+
+.Setings-box .Options-box h4{
+margin: 0;
+color: #666;
+}
+
+.Setings-box .Options-box .Colors-List{
+list-style: none;
+text-align: center;
+padding: 0;
+}
+
+.Setings-box .Options-box .Colors-List li{
+    width: 20px;
+    height: 20px;
+    color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.Setings-box .Options-box .Colors-List li.active{
+    opacity: 1;
+}
+
+.Setings-box .Options-box .Colors-List li:first-child{
+    background-color: #ff9800;
+}
+
+.Setings-box .Options-box .Colors-List li:nth-child(2){
+    background-color: #E91E63;
+}
+
+.Setings-box .Options-box .Colors-List li:nth-child(3){
+    background-color: #009688;
+}
+
+.Setings-box .Options-box .Colors-List li:nth-child(4){
+    background-color: #03E9F4;
+}
+
+.Setings-box .Options-box .Colors-List li:nth-child(5){
+    background-color: #3b6303;
+}
+/* Start Landing Pag */
+.Landing-Page {
+min-height: 100vh;
+background-image: url('../Imgs/1.jpg');
+background-size: cover;
+position: relative;
+}
+
+.Landing-Page .overlay{
+    background-color:rgba(0, 0, 0, 0.55);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+
+.header-area .loge{
+    width: 500px;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.header-area .links{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0px ;
+    padding-right: 65px;
+    font-size: 20px;
+}
+
+.header-area .links li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header-area .links li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-area .links li a:hover,
+.header-area .links li a.active{
+    color: var(--main-color);
+}
+
+.Landing-Page .introdaction-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+}
+
+.introdaction-text h1{
+    font-size: 50px;
+    margin: 0 0 12 px;
+    margin-bottom: 35px;
+}
+
+.introdaction-text h1 span{
+    color: var(--main-color);
+}
+
+.introdaction-text p{
+    line-height: 1.7;
+    font-size: 35px;
+    margin: 0;
+    width:950px;
+}
+/* End Landing Pag */
+
+
